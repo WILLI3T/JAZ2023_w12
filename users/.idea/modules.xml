@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/users.iml" filepath="$PROJECT_DIR$/users.iml" />
+      <module fileurl="file://$PROJECT_DIR$/users-data/users-data.iml" filepath="$PROJECT_DIR$/users-data/users-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/users-data-updater/users-data-updater.iml" filepath="$PROJECT_DIR$/users-data-updater/users-data-updater.iml" />
+      <module fileurl="file://$PROJECT_DIR$/users-random-api-client/users-random-api-client.iml" filepath="$PROJECT_DIR$/users-random-api-client/users-random-api-client.iml" />
+    </modules>
+  </component>
+</project>
