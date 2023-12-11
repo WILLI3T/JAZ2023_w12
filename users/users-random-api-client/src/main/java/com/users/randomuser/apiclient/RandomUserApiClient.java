@@ -16,6 +16,7 @@ public class RandomUserApiClient implements IRandomUsersApiClient{
     @Override
     public UserResultsDto getRandomUsers(int howMany) {
         var url = "https://randomuser.me/api/?results=%d".formatted(howMany);
+
         return restTemplate.getForObject(url, UserResultsDto.class);
     }
 }

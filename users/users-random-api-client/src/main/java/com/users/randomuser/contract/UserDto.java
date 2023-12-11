@@ -9,6 +9,15 @@ public class UserDto {
     private String email;
     private PictureDto picture;
     private String gender;
+    private DateOfBirthDto dob;
+
+    public DateOfBirthDto getDob() {
+        return dob;
+    }
+
+    public void setDob(DateOfBirthDto dob) {
+        this.dob = dob;
+    }
 
     public UserNameDto getName() {
         return name;

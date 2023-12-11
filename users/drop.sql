@@ -1,0 +1,11 @@
+alter table address drop foreign key FKib7ks475hbp6yme4ooi9btyq9;
+alter table address drop foreign key FK81ihijcn1kdfwffke0c0sjqeb;
+alter table location drop foreign key FKm5xl34yboc8re75qsac6svt6g;
+alter table person drop foreign key FK2is3ph79mqcwtkd724syhtjbi;
+alter table picture drop foreign key FK41i6hfm4sdrkrm9krf2h1i9fx;
+alter table user drop foreign key FKir5g7yucydevmmc84i788jp79;
+drop table if exists address;
+drop table if exists location;
+drop table if exists person;
+drop table if exists picture;
+drop table if exists user;
