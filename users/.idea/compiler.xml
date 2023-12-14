@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="users-data" />
         <module name="users-random-api-client" />
+        <module name="users-web-api" />
         <module name="users-data-updater" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
       <module name="users-data" target="17" />
       <module name="users-data-updater" target="17" />
       <module name="users-random-api-client" target="17" />
+      <module name="users-web-api" target="18" />
       <module name="users-web-service" target="18" />
     </bytecodeTargetLevel>
   </component>
@@ -23,6 +25,7 @@
       <module name="users-data" options="-parameters" />
       <module name="users-data-updater" options="-parameters" />
       <module name="users-random-api-client" options="-parameters" />
+      <module name="users-web-api" options="-parameters" />
       <module name="users-web-service" options="-parameters" />
     </option>
   </component>

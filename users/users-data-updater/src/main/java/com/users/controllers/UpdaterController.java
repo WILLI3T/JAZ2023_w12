@@ -22,7 +22,6 @@ public class UpdaterController {
     @GetMapping("update")
     public ResponseEntity update(@RequestParam int size){
         new Thread(()->updater.update(size)).start();
-//        updater.update(size);
         return ResponseEntity.ok("Update Started at "+ LocalDateTime.now());
     }
 

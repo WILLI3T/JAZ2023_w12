@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/users-random-api-client/pom.xml" />
         <option value="$PROJECT_DIR$/users-data/pom.xml" />
         <option value="$PROJECT_DIR$/users-data-updater/pom.xml" />
+        <option value="$PROJECT_DIR$/users-web-api/pom.xml" />
       </list>
     </option>
   </component>
