@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import java.time.LocalDateTime;
 
-@Controller()
+@Controller
 @RequestMapping("updater")
 public class UpdaterController {
 

@@ -8,11 +8,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class PersonMapper implements IMap<UserDto, Person> {
-    IMap<LoginDto, User> userMapper;
 
-    public PersonMapper(IMap<LoginDto, User> userMapper) {
-        this.userMapper = userMapper;
-    }
 
     @Override
     public Person toEntity(UserDto personDto) {
@@ -24,10 +20,6 @@ public class PersonMapper implements IMap<UserDto, Person> {
         person.setGender(personDto.getGender());
         person.setAge(personDto.getDob().getAge());
         person.setDateOfBirth(personDto.getDob().getDate());
-        /**
-         * zinwestygować
-         */
-        person.setUser(userMapper.toEntity(personDto.getLogin()));
 
         return person;
     }

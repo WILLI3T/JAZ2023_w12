@@ -5,6 +5,7 @@ import com.users.randomuser.contract.LoginDto;
 import com.users.randomuser.contract.PictureDto;
 import com.users.randomuser.contract.UserDto;
 import com.users.usersdata.model.*;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -15,10 +16,14 @@ public class Mapper implements IMapper {
     private final IMap<UserDto, Person> person;
     private final IMap<LoginDto, User> user;
     private final IMap<PictureDto, Picture> picture;
-private final IMap<LocationDto, List<Location>> locations;
-private final IMap<LocationDto.StreetDto, Address> addresses;
+    private final IMap<LocationDto, List<Location>> locations;
+    private final IMap<LocationDto.StreetDto, Address> addresses;
 
-    public Mapper(IMap<UserDto, Person> person, IMap<LoginDto, User> user, IMap<PictureDto, Picture> picture, IMap<LocationDto, List<Location>> locations, IMap<LocationDto.StreetDto, Address> addresses) {
+    public Mapper(IMap<UserDto, Person> person,
+                  IMap<LoginDto, User> user,
+                  IMap<PictureDto, Picture> picture,
+                  IMap<LocationDto, List<Location>> locations,
+                  IMap<LocationDto.StreetDto, Address> addresses) {
         this.person = person;
         this.user = user;
         this.picture = picture;

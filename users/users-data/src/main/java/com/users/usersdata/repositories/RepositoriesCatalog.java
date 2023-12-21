@@ -1,6 +1,7 @@
 package com.users.usersdata.repositories;
 
 
+import lombok.Getter;
 import org.springframework.stereotype.Repository;
 
 @Repository

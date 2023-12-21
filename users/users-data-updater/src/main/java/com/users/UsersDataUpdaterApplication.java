@@ -1,20 +1,10 @@
 package com.users;
 
-import com.users.randomuser.apiclient.IRandomUsersApiClient;
-import com.users.randomuser.contract.LoginDto;
-import com.users.randomuser.contract.PictureDto;
-import com.users.randomuser.contract.UserDto;
-import com.users.updater.mappers.IMap;
-import com.users.usersdata.model.Person;
-import com.users.usersdata.model.Picture;
-import com.users.usersdata.model.User;
 import com.users.usersdata.repositories.IRepositoriesCatalog;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-
-import java.util.List;
 
 @EnableJpaRepositories
 @SpringBootApplication
@@ -26,7 +16,11 @@ public class UsersDataUpdaterApplication implements CommandLineRunner {
 //    final IMap<PictureDto, Picture> pictureMapper;
 //    final IRandomUsersApiClient client;
 //
-//    final IRepositoriesCatalog database;
+    final IRepositoriesCatalog database;
+
+    public UsersDataUpdaterApplication(IRepositoriesCatalog database) {
+        this.database = database;
+    }
 //    public UsersDataUpdaterApplication(IMap<UserDto, Person> mapper, IMap<LoginDto, User> userMapper, IMap<PictureDto, Picture> pictureMapper, IRandomUsersApiClient client, IRepositoriesCatalog database) {
 //        this.database = database;
 //
@@ -43,6 +37,13 @@ public class UsersDataUpdaterApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
 
+
+        var people = database.getPeople().findAllByAgeIsGreaterThan(50);
+
+        for (var person :
+                people) {
+            System.out.println(person.getUser().getUsername());
+        }
 
 //        var ageAverageFrom  = getAgeAverage(35);
 //        var pplWIthAge = getPeopleWithAge();

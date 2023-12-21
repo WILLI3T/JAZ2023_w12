@@ -3,7 +3,7 @@ package com.users.updater;
 import com.users.randomuser.apiclient.IRandomUsersApiClient;
 import com.users.randomuser.contract.LocationDto;
 import com.users.randomuser.contract.UserDto;
-import com.users.updater.mappers.IMapper;
+import com.users.updater.mappers.*;
 import com.users.usersdata.model.Location;
 import com.users.usersdata.model.Person;
 import com.users.usersdata.repositories.IRepositoriesCatalog;
@@ -14,6 +14,11 @@ import java.util.List;
 
 @Service
 public class UserUpdater implements IUpdate {
+
+    static void sampleMethod(){
+        new Mapper(new PersonMapper(), new UserMapper(),new PictureMapper(), new LocationsMapper(), new AddressMapper());
+    }
+
     final IMapper map;
     final IRandomUsersApiClient client;
     final IRepositoriesCatalog database;
