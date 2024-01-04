@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="users-data" />
-        <module name="users-random-api-client" />
         <module name="users-web-api" />
+        <module name="users-random-api-client" />
         <module name="users-data-updater" />
       </profile>
     </annotationProcessing>

@@ -1,7 +1,12 @@
 package com.users.webapi.contract;
 
+import lombok.Data;
+import lombok.experimental.Accessors;
+
 import java.time.LocalDateTime;
 
+@Data
+@Accessors(chain = true)
 public class PersonDto {
 
     private String phone;
