@@ -62,6 +62,8 @@ public class PersonController {
         return ResponseEntity.ok(pictureDto);
     }
 
+
+
     // Dalsza część deklarowania endpointów (pisane w podobnym stylu)
 
     private static URI getLocationUri(long id) {
