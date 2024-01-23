@@ -9,3 +9,8 @@ drop table if exists location;
 drop table if exists person;
 drop table if exists picture;
 drop table if exists user;
+drop table if exists address cascade ;
+drop table if exists location cascade ;
+drop table if exists person cascade ;
+drop table if exists picture cascade ;
+drop table if exists user cascade ;

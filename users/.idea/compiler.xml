@@ -14,10 +14,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="users-data" target="17" />
-      <module name="users-data-updater" target="17" />
-      <module name="users-random-api-client" target="17" />
-      <module name="users-web-api" target="17" />
       <module name="users-web-service" target="18" />
     </bytecodeTargetLevel>
   </component>
